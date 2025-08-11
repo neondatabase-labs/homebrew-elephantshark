@@ -8,7 +8,16 @@ class Pgpi < Formula
   depends_on "ruby"
 
   def install
+    # copy script from release tarball (there are no dependencies)
     bin.install "pgpi"
+
+    # rewrite shebang to use Homebrew-supplied Ruby
+    ruby_rewrite_info = Utils::Shebang::RewriteInfo.new(
+      %r{^#!/usr/bin/env ruby$},
+      "#!/usr/bin/env ruby".length,
+      "#{Formula["ruby"].opt_bin}/ruby",
+    )
+    rewrite_shebang ruby_rewrite_info, "#{bin}/pgpi"
   end
 
   test do
