@@ -1,8 +1,8 @@
 class Pgpi < Formula
   desc "Postgres Private Investigator"
   homepage "https://github.com/neondatabase-labs/pgpi"
-  url "https://github.com/neondatabase-labs/pgpi/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "93f1924284c1f8d5834690fd53b1e315e0366bf96bab503f17a833765acea8aa"
+  url "https://github.com/neondatabase-labs/pgpi/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "647e89a951dbd43107b7832e4d747a41d09038e7aef2308c3165785f9eb2989d"
   license "Apache-2.0"
 
   depends_on "ruby"
