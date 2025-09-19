@@ -1,8 +1,8 @@
 class Elephantshark < Formula
   desc "Postgres network traffic monitor"
   homepage "https://github.com/neondatabase-labs/elephantshark"
-  url "https://github.com/neondatabase-labs/elephantshark/archive/refs/tags/v0.1.2.tar.gz"
-  sha256 "d82a7e1cacb1d7a57a97436bfd060e8ea8dd7d8eb7a9850ade057cc848f39509"
+  url "https://github.com/neondatabase-labs/elephantshark/archive/refs/tags/v0.1.3.tar.gz"
+  sha256 "6f63ec0261c6daa513f65013d9d820a69776c8f09e37e182af5e3902468291fa"
   license "Apache-2.0"
 
   depends_on "ruby"
